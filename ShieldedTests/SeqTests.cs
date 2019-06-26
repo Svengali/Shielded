@@ -36,8 +36,11 @@ namespace ShieldedTests
                 .ForAll(n => Shield.InTransaction(() => 
                     seq [n] = seq [n] + 20)
             );
+
             for (int i = 0; i < 20; i++)
                 Assert.AreEqual(i + 21, seq [i]);
+
+						seq.Append( -10 );
 
             Shield.InTransaction(() => {
                 seq.Append(0);

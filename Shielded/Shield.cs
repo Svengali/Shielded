@@ -376,7 +376,7 @@ namespace Shielded
         /// <summary>
         /// Enlists a synchronized side effect. Such side effects are executed during a
         /// commit, when individual transactional fields are still locked. They run just
-        /// before any triggered <see cref="WhenCommitting"/> subscriptions, under the
+        /// before any triggered <see ref="WhenCommitting"/> subscriptions, under the
         /// same conditions as they do. This can only be called within transactions.
         /// If the transaction is read-only, this will still work, but it will not be in
         /// sync with anything - please note that a read-only transaction locks nothing.

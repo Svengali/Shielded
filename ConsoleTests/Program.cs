@@ -1186,7 +1186,7 @@ namespace ConsoleTests
 
             //DictionaryTest();
 
-            //BetShopTest();
+            BetShopTest();
 
             //BetShopPoolTest();
 
@@ -1194,7 +1194,7 @@ namespace ConsoleTests
 
             //DictionaryPoolTest();
 
-            SimpleOps();
+            //SimpleOps();
 
             //MultiFieldOps();
 

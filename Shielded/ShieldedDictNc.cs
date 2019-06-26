@@ -198,7 +198,7 @@ namespace Shielded
 
         /// <summary>
         /// An enumerable of keys for which the current transaction made changes in the dictionary.
-        /// Safely accessible from <see cref="Shield.WhenCommitting"/> subscriptions. NB that
+        /// Safely accessible from <see ref="Shield.WhenCommitting"/> subscriptions. NB that
         /// this also includes keys which were removed from the dictionary.
         /// </summary>
         public IEnumerable<TKey> Changes
@@ -217,7 +217,7 @@ namespace Shielded
 
         /// <summary>
         /// An enumerable of keys which the current transaction read or wrote into.
-        /// Safely accessible from <see cref="Shield.WhenCommitting"/> subscriptions. NB that
+        /// Safely accessible from <see ref="Shield.WhenCommitting"/> subscriptions. NB that
         /// this also includes keys which were removed from the dictionary.
         /// </summary>
         public IEnumerable<TKey> Reads
